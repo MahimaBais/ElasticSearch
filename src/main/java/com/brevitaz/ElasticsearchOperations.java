@@ -25,9 +25,9 @@ import static com.brevitaz.ElasticSearchConfig.*;
 
 public class ElasticsearchOperations {
 
+    IndexResponse indexResponse;
     public IndexResponse makeIndex(List<Object> objects) throws IOException {
 
-        IndexResponse indexResponse = null;
         int i = 1;
 
         for ( Object object : objects ) {
